@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Serve Coffee &amp; Goods</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Serve Coffee &amp; Goods is a cozy coffee shop at 328 Old Annetta Rd in Aledo, Texas. Espresso drinks, chai, matcha, avocado toast and bakes. Dine in or take out.">
+<meta name="theme-color" content="#203538">
+<link rel="canonical" href="https://tawantingle007-eng.github.io/serve-coffee-aledo/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Serve Coffee &amp; Goods · Aledo, TX">
+<meta property="og:description" content="Cozy coffee shop on Old Annetta Rd. Espresso, chai, matcha, avocado toast and bakes. Dine in or take out.">
+<meta property="og:image" content="https://tawantingle007-eng.github.io/serve-coffee-aledo/media/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Serve Coffee &amp; Goods · Aledo, TX">
+<meta name="twitter:image" content="https://tawantingle007-eng.github.io/serve-coffee-aledo/media/og.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Serve Coffee & Goods","telephone":"+1-817-441-1400","priceRange":"$1–10","servesCuisine":"Coffee","acceptsReservations":false,
+"address":{"@type":"PostalAddress","streetAddress":"328 Old Annetta Rd","addressLocality":"Aledo","addressRegion":"TX","postalCode":"76008","addressCountry":"US"},
+"hasMap":"https://www.google.com/maps/search/?api=1&query=Serve+Coffee+%26+Goods+328+Old+Annetta+Rd+Aledo+TX+76008"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="preload" as="image" href="media/hero-poster.jpg" fetchpriority="high">
+<style>
+/* Layout: full-bleed bands that alternate slate wall and paper counter; content in a 1120px column; type does the heavy lifting. */
+:root{
+  --slate:#203538; --slate-2:#2C4649; --slate-ink:#152427;
+  --paper:#F2EADC; --paper-2:#E8DCC8; --ink:#231A15;
+  --honey:#C9965A; --honey-deep:#9A6B35; --sage:#8FA79E;
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"Newsreader", "Iowan Old Style", Georgia, serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --col:1120px;
+  --gut-l:max(16px, env(safe-area-inset-left, 0px)); --gut-r:max(16px, env(safe-area-inset-right, 0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.125rem/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--honey);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--col);margin-inline:auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+.eyebrow{font:500 .78rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(2.2rem,5.5vw,4.2rem);line-height:.98;font-weight:800}
+h3{font-size:1.35rem;font-weight:600;letter-spacing:-.01em}
+p{margin:0}
+
+/* header */
+.top{position:fixed;inset:0 0 auto 0;z-index:20;padding-top:env(safe-area-inset-top,0px);color:var(--paper);transition:background .3s ease, box-shadow .3s ease}
+.top.solid{background:color-mix(in srgb, var(--slate-ink) 88%, transparent);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(242,234,220,.08)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:34px;height:34px;color:var(--paper)}
+.brand b{font:800 1.45rem/1 var(--display);letter-spacing:-.03em}
+.brand span{display:block;margin-top:3px;font:500 .62rem/1.15 var(--mono);letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.nav{display:flex;gap:22px;margin-left:auto}
+.nav a{font:500 .78rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;opacity:.85}
+.nav a:hover{opacity:1;color:var(--honey)}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:600 1rem/1 var(--display);text-decoration:none;transition:transform .2s ease, background .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn-honey{background:var(--honey);color:var(--slate-ink)}
+.btn-honey:hover{background:#D9A86A}
+.btn-ghost{border:1.5px solid rgba(242,234,220,.55);color:var(--paper)}
+.btn-ghost:hover{background:rgba(242,234,220,.1)}
+.top .btn{min-height:40px;padding:0 16px;font-size:.92rem}
+@media (max-width:860px){.nav{display:none}.top .btn{margin-left:auto}}
+
+/* hero */
+.hero{position:relative;min-height:clamp(600px,92svh,940px);display:flex;align-items:flex-end;color:var(--paper);background:var(--slate-ink);overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:-8% 0 -8% 0;z-index:-2;will-change:transform}
+.hero-media video,.hero-media img{width:100%;height:100%;object-fit:cover;object-position:68% 50%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg, rgba(21,36,39,.92) 0%, rgba(21,36,39,.7) 34%, rgba(21,36,39,.05) 66%),
+  linear-gradient(0deg, rgba(21,36,39,.9) 0%, rgba(21,36,39,0) 40%)}
+.hero .wrap{width:100%;padding-block:150px 64px}
+.hero-copy{max-width:640px;will-change:transform}
+.hero h1{font-size:clamp(3rem,8.4vw,6.6rem);line-height:.9;font-weight:800;letter-spacing:-.045em}
+.hero h1 em{font-family:var(--body);font-style:italic;font-weight:400;letter-spacing:-.02em;color:var(--honey)}
+.hero-lede{margin-top:22px;font-size:clamp(1.1rem,1.6vw,1.3rem);max-width:30em;color:rgba(242,234,220,.86)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;color:rgba(242,234,220,.78)}
+.hero-meta .eyebrow b{color:var(--paper);font-weight:500}
+.stars{color:var(--honey);letter-spacing:.08em}
+@media (max-width:700px){
+  .hero{align-items:flex-end}
+  .hero-media video,.hero-media img{object-position:72% 50%}
+  .hero::after{background:linear-gradient(0deg, rgba(21,36,39,.96) 0%, rgba(21,36,39,.78) 48%, rgba(21,36,39,.2) 80%)}
+}
+
+/* parallax decor */
+.decor{position:absolute;pointer-events:none;will-change:transform}
+.bean{fill:none;stroke:currentColor;stroke-width:2.2}
+
+/* about */
+.about{position:relative;overflow:hidden;padding-block:clamp(90px,12vw,160px)}
+.about .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,6vw,90px);align-items:center;position:relative;z-index:1}
+.about .eyebrow{color:var(--honey-deep)}
+.about h2{margin-top:16px}
+.about .rv > p:not(.eyebrow){margin-top:22px;max-width:34em}
+.about .rv > h2 + p{font-size:1.32rem;line-height:1.5}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:color-mix(in srgb,var(--ink) 16%,transparent);border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:18px;overflow:hidden}
+.fact{background:var(--paper);padding:24px 22px;min-width:0}
+.fact .eyebrow{color:color-mix(in srgb,var(--ink) 62%,transparent);font-size:.68rem}
+.fact strong{display:block;margin-top:10px;font:800 2.1rem/1 var(--display);letter-spacing:-.03em}
+.fact span{display:block;margin-top:6px;font-size:1rem;color:color-mix(in srgb,var(--ink) 75%,transparent)}
+.fact.no strong{text-decoration:line-through;text-decoration-thickness:2px;opacity:.45}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr}}
+
+/* menu */
+.menu{background:var(--slate);color:var(--paper);position:relative;overflow:hidden;padding-block:clamp(90px,12vw,150px)}
+.menu-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;position:relative;z-index:1}
+.menu-head .eyebrow{color:var(--honey)}
+.menu-head h2{margin-top:16px}
+.menu-head p{max-width:24em;color:rgba(242,234,220,.75)}
+.menu-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(18px,2.4vw,32px);margin-top:56px;position:relative;z-index:1}
+.menu-col{border-top:2px solid var(--honey);padding-top:20px;min-width:0}
+.menu-col h3{color:var(--honey)}
+.menu-col ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:0}
+.menu-col li{font:400 1.3rem/1.25 var(--display);letter-spacing:-.015em;padding:13px 0;border-bottom:1px dashed rgba(242,234,220,.22)}
+.menu-col li small{display:block;font:400 .95rem/1.4 var(--body);font-style:italic;color:rgba(242,234,220,.62);margin-top:3px;letter-spacing:0}
+.menu-note{margin-top:40px;font-size:1rem;color:rgba(242,234,220,.66);position:relative;z-index:1}
+@media (max-width:980px){.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.menu-grid{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{position:relative;overflow:hidden;padding-block:clamp(90px,12vw,150px)}
+.reviews .eyebrow{color:var(--honey-deep)}
+.reviews h2{margin-top:16px;max-width:12em}
+.score{display:flex;align-items:baseline;gap:14px;margin-top:22px;flex-wrap:wrap}
+.score strong{font:800 3.4rem/1 var(--display);letter-spacing:-.04em}
+.score .stars{font-size:1.4rem;color:var(--honey-deep)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:48px;position:relative;z-index:1}
+.quote{background:#FBF6EC;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:20px;padding:28px 26px;display:flex;flex-direction:column;gap:20px;min-width:0}
+.quote:nth-child(2){transform:translateY(28px)}
+.quote blockquote{margin:0;font:400 1.18rem/1.6 var(--body);flex:1}
+.quote blockquote::before{content:"“";display:block;font:800 3.6rem/.6 var(--display);color:var(--honey);margin-bottom:8px}
+.quote footer{display:flex;flex-direction:column;gap:4px;font-size:.98rem}
+.quote footer b{font:600 1.05rem/1.2 var(--display)}
+.quote footer span{font:500 .7rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 60%,transparent)}
+.src{margin-top:56px;font-size:.98rem;color:color-mix(in srgb,var(--ink) 70%,transparent);max-width:46em}
+@media (max-width:900px){.quotes{grid-template-columns:1fr}.quote:nth-child(2){transform:none}}
+
+/* visit */
+.visit{background:var(--slate-ink);color:var(--paper);position:relative;overflow:hidden;padding-block:clamp(90px,12vw,150px)}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);position:relative;z-index:1}
+.visit .eyebrow{color:var(--honey)}
+.visit h2{margin-top:16px}
+.visit-list{display:grid;gap:0;margin-top:8px}
+.row{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;padding:22px 0;border-bottom:1px solid rgba(242,234,220,.14)}
+.row .eyebrow{color:rgba(242,234,220,.6);padding-top:6px}
+.row a{text-decoration-color:var(--honey);text-underline-offset:5px;text-decoration-thickness:1.5px}
+.row a:hover{color:var(--honey)}
+.big{font:600 1.5rem/1.25 var(--display);letter-spacing:-.015em}
+.muted{color:rgba(242,234,220,.66);font-size:1rem;margin-top:4px}
+.visit-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.dial{position:relative;aspect-ratio:1;max-width:460px;width:100%;justify-self:end;align-self:center}
+@media (max-width:860px){.visit .wrap{grid-template-columns:1fr}.dial{justify-self:center;max-width:340px}.row{grid-template-columns:1fr;gap:6px}}
+
+/* footer */
+.foot{background:var(--slate-ink);color:rgba(242,234,220,.7);border-top:1px solid rgba(242,234,220,.1);padding-block:36px calc(36px + env(safe-area-inset-bottom,0px))}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between;font-size:.98rem}
+.foot .brand{color:var(--paper)}
+.foot nav{display:flex;flex-wrap:wrap;gap:12px 24px}
+.foot a{text-underline-offset:4px}
+
+/* reveal: visible at rest; scroll-driven lift where supported */
+@keyframes rise{from{opacity:.15;translate:0 36px}to{opacity:1;translate:0 0}}
+@supports (animation-timeline: view()){@media (prefers-reduced-motion:no-preference){.rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 45%}}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.btn:hover{transition:none;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#hero" aria-label="Serve Coffee &amp; Goods, back to top">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="30" cy="32" r="26" stroke="currentColor" stroke-width="3.4"/><circle cx="30" cy="32" r="15.5" stroke="currentColor" stroke-width="3.4"/><path d="M45.5 37.5 L56 41" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/><circle cx="30" cy="32" r="9" fill="#C9965A"/></svg>
+      <div><b>Serve</b><span>Coffee &amp; Goods</span></div>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a><a href="#menu">Menu</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-honey" href="tel:+18174411400" aria-label="Call Serve Coffee and Goods at 817-441-1400">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero" aria-label="Welcome">
+  <div class="hero-media" data-depth="0.35">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg" aria-hidden="true" disablepictureinpicture>
+      <source src="media/hero-720.webm" type="video/webm" media="(max-width: 760px)">
+      <source src="media/hero-720.mp4" type="video/mp4" media="(max-width: 760px)">
+      <source src="media/hero-1080.webm" type="video/webm">
+      <source src="media/hero-1080.mp4" type="video/mp4">
+    </video>
+    <script>(function(v){var m=matchMedia('(max-width: 760px)').matches;[].slice.call(v.querySelectorAll('source')).forEach(function(s){if(m!==s.src.indexOf('720')>-1)s.remove();});v.load();})(document.getElementById('heroVideo'))</script>
+  </div>
+  <div class="wrap">
+    <div class="hero-copy" data-depth="-0.12">
+      <p class="eyebrow" style="color:var(--honey)">Coffee shop · Aledo, Texas</p>
+      <h1 style="margin-top:18px">Good coffee, <em>served</em> on Old&nbsp;Annetta.</h1>
+      <p class="hero-lede">A small, warm coffee shop with seats inside and out. Espresso, chai and matcha, plus avocado toast, quiche and something sweet from the bake case.</p>
+      <div class="hero-cta">
+        <a class="btn btn-honey" href="https://www.google.com/maps/dir/?api=1&amp;destination=Serve+Coffee+%26+Goods%2C+328+Old+Annetta+Rd%2C+Aledo%2C+TX+76008" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12z"/><path d="M9 14v-2a2 2 0 0 1 2-2h5m-2-2 2 2-2 2"/></svg>Get directions</a>
+        <a class="btn btn-ghost" href="tel:+18174411400">(817) 441-1400</a>
+      </div>
+      <div class="hero-meta">
+        <span class="eyebrow"><span class="stars" aria-hidden="true">★★★★★</span> <b>4.6</b> · 154 Google reviews</span>
+        <span class="eyebrow">Closes <b>5:00 PM</b></span>
+        <span class="eyebrow">$1–10 per person</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <svg class="decor" data-depth="0.15" style="right:-40px;top:40px;width:320px;color:rgba(35,26,21,.07)" viewBox="0 0 320 320" aria-hidden="true">
+    <circle cx="160" cy="160" r="150" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="160" cy="160" r="104" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="160" cy="160" r="58" fill="none" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <svg class="decor" data-depth="0.35" style="left:3%;bottom:40px;width:150px;color:rgba(154,107,53,.35)" viewBox="0 0 150 150" aria-hidden="true">
+    <g transform="rotate(-25 40 40)"><ellipse class="bean" cx="40" cy="40" rx="18" ry="26"/><path class="bean" d="M40 15c-9 10 9 30 0 50"/></g>
+    <g transform="rotate(30 105 100)"><ellipse class="bean" cx="105" cy="100" rx="15" ry="22"/><path class="bean" d="M105 79c-8 9 8 25 0 42"/></g>
+  </svg>
+  <svg class="decor" data-depth="0.6" style="right:38%;bottom:-20px;width:90px;color:rgba(154,107,53,.45)" viewBox="0 0 90 90" aria-hidden="true">
+    <g transform="rotate(50 45 45)"><ellipse class="bean" cx="45" cy="45" rx="16" ry="24"/><path class="bean" d="M45 22c-8 9 8 27 0 46"/></g>
+  </svg>
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">About the shop</p>
+      <h2>Made for a slow cup or a quick stop.</h2>
+      <p>Serve is a small coffee shop in Aledo with a warm room, a counter full of espresso gear and retail bags, and seating out front.</p>
+      <p>Come in to settle down with a book, meet a few friends, or let the kids burn off energy in the outdoor space. If you are in a hurry, grab your order to go.</p>
+    </div>
+    <div class="facts rv" role="list">
+      <div class="fact" role="listitem"><p class="eyebrow">Google rating</p><strong>4.6</strong><span>from 154 reviews</span></div>
+      <div class="fact" role="listitem"><p class="eyebrow">Per person</p><strong>$1–10</strong><span>reported by 16 people</span></div>
+      <div class="fact" role="listitem"><p class="eyebrow">Dine in</p><strong>Yes</strong><span>Inside and outdoor seating</span></div>
+      <div class="fact" role="listitem"><p class="eyebrow">Takeout</p><strong>Yes</strong><span>Grab it to go</span></div>
+      <div class="fact no" role="listitem"><p class="eyebrow">Delivery</p><strong>No</strong><span>Not offered</span></div>
+      <div class="fact" role="listitem"><p class="eyebrow">Access</p><strong>Yes</strong><span>Wheelchair-accessible</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <svg class="decor" data-depth="0.15" style="left:-80px;top:-60px;width:520px;color:rgba(242,234,220,.05)" viewBox="0 0 520 520" aria-hidden="true">
+    <circle cx="260" cy="260" r="250" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="260" cy="260" r="180" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="260" cy="260" r="110" fill="none" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <svg class="decor" data-depth="0.35" style="right:4%;top:70px;width:170px;color:rgba(201,150,90,.3)" viewBox="0 0 170 120" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="10" y="30" width="150" height="18" rx="9" transform="rotate(-12 85 39)"/><path d="M22 44c40-6 80-14 124-30" transform="rotate(-12 85 39)"/><rect x="20" y="70" width="140" height="16" rx="8" transform="rotate(-4 90 78)"/></g>
+  </svg>
+  <svg class="decor" data-depth="0.6" style="left:46%;bottom:30px;width:80px;color:rgba(201,150,90,.4)" viewBox="0 0 80 80" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M40 6 47 30 72 26 52 42 66 64 42 52 28 74 30 48 6 42 30 32z"/><circle cx="40" cy="40" r="4"/></g>
+  </svg>
+  <div class="wrap">
+    <div class="menu-head rv">
+      <div><p class="eyebrow">Menu favorites</p><h2>What people order.</h2></div>
+      <p>The items guests mention most on Google. The full menu and current prices are at the counter.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-col rv"><h3>Espresso bar</h3><ul>
+        <li>Cappuccino</li><li>PH Delight latte</li><li>Iced latte<small>Good on the patio</small></li><li>Cold brew</li><li>Ginger latte</li>
+      </ul></div>
+      <div class="menu-col rv"><h3>Tea lattes</h3><ul>
+        <li>Chai latte</li><li>Matcha latte</li><li>Lavender matcha</li>
+      </ul></div>
+      <div class="menu-col rv"><h3>Kitchen</h3><ul>
+        <li>Avocado toast</li><li>Quiche</li>
+      </ul></div>
+      <div class="menu-col rv"><h3>Bake case</h3><ul>
+        <li>Cinnamon coffee cake</li><li>Cinnamon roll</li><li>Pecan pie</li>
+      </ul></div>
+    </div>
+    <p class="menu-note">Dine in or take out. Delivery is not offered.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <svg class="decor" data-depth="0.15" style="right:-60px;bottom:-60px;width:380px;color:rgba(35,26,21,.06)" viewBox="0 0 380 380" aria-hidden="true">
+    <circle cx="190" cy="190" r="180" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="190" cy="190" r="120" fill="none" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <svg class="decor" data-depth="0.35" style="left:2%;top:90px;width:110px;color:rgba(154,107,53,.3)" viewBox="0 0 110 110" aria-hidden="true">
+    <g transform="rotate(15 55 55)"><ellipse class="bean" cx="55" cy="55" rx="20" ry="30"/><path class="bean" d="M55 26c-10 11 10 34 0 58"/></g>
+  </svg>
+  <svg class="decor" data-depth="0.6" style="right:30%;top:40px;width:70px;color:rgba(154,107,53,.4)" viewBox="0 0 70 70" aria-hidden="true">
+    <g transform="rotate(-40 35 35)"><ellipse class="bean" cx="35" cy="35" rx="13" ry="20"/><path class="bean" d="M35 16c-7 8 7 22 0 38"/></g>
+  </svg>
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">From Google reviews</p>
+      <h2>Regulars and road-trippers agree.</h2>
+      <div class="score"><strong>4.6</strong><span class="stars" aria-label="4.6 out of 5 stars">★★★★★</span><span>154 reviews on Google</span></div>
+    </div>
+    <div class="quotes">
+      <figure class="quote rv" style="margin:0">
+        <blockquote>Cozy little coffee shop nestled right in the heart of Aledo. The indoor and outdoor spaces available here are beautifully kept… The coffee is very well prepared and consistently delicious. The service was quick and friendly!</blockquote>
+        <footer><b>Brian Broadbent</b><span>Local Guide · Google review</span></footer>
+      </figure>
+      <figure class="quote rv" style="margin:0">
+        <blockquote>Great place in Aledo! The coffee it’s really good, the outdoor space is awesome for little kids to run and play. We definitely will be back!</blockquote>
+        <footer><b>Ailen Ochoa</b><span>Local Guide · Google review</span></footer>
+      </figure>
+      <figure class="quote rv" style="margin:0">
+        <blockquote>The atmosphere alone was a good 4/5, very cozy and relaxing. We noticed that there were lots of places to gather both indoor and outdoor… The PH Latte was delicious!</blockquote>
+        <footer><b>Ximena</b><span>Local Guide · Google review</span></footer>
+      </figure>
+    </div>
+    <p class="src">Excerpts quoted word for word from reviews on <a href="https://www.google.com/maps/search/?api=1&amp;query=Serve+Coffee+%26+Goods+328+Old+Annetta+Rd+Aledo+TX+76008" target="_blank" rel="noopener">Google Maps</a>.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <svg class="decor" data-depth="0.15" style="left:-120px;bottom:-120px;width:460px;color:rgba(242,234,220,.04)" viewBox="0 0 460 460" aria-hidden="true">
+    <circle cx="230" cy="230" r="220" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="230" cy="230" r="150" fill="none" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Hours &amp; location</p>
+      <h2>Find us on Old Annetta Road.</h2>
+      <div class="visit-list">
+        <div class="row"><p class="eyebrow">Hours</p><div><p class="big">Closes at 5:00 PM</p><p class="muted">Closing time as listed on Google. Call for the full weekly schedule.</p></div></div>
+        <div class="row"><p class="eyebrow">Address</p><div><a class="big" href="https://www.google.com/maps/dir/?api=1&amp;destination=Serve+Coffee+%26+Goods%2C+328+Old+Annetta+Rd%2C+Aledo%2C+TX+76008" target="_blank" rel="noopener">328 Old Annetta Rd<br>Aledo, TX 76008</a><p class="muted">Plus code M9WV+R3 · Tap for directions</p></div></div>
+        <div class="row"><p class="eyebrow">Phone</p><div><a class="big" href="tel:+18174411400">(817) 441-1400</a><p class="muted">Tap to call</p></div></div>
+      </div>
+      <div class="visit-cta">
+        <a class="btn btn-honey" href="https://www.google.com/maps/dir/?api=1&amp;destination=Serve+Coffee+%26+Goods%2C+328+Old+Annetta+Rd%2C+Aledo%2C+TX+76008" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-ghost" href="tel:+18174411400">Call the shop</a>
+      </div>
+    </div>
+    <div class="dial rv" aria-hidden="true">
+      <svg viewBox="0 0 400 400" style="width:100%;height:100%">
+        <g data-depth="0.15" class="decor-in"><circle cx="200" cy="200" r="190" fill="none" stroke="rgba(242,234,220,.16)" stroke-width="1.5"/>
+          <g stroke="rgba(242,234,220,.35)" stroke-width="2">
+            <line x1="200" y1="14" x2="200" y2="34"/><line x1="386" y1="200" x2="366" y2="200"/><line x1="14" y1="200" x2="34" y2="200"/></g>
+          <text x="200" y="58" text-anchor="middle" fill="rgba(242,234,220,.7)" font-family="IBM Plex Mono, monospace" font-size="15" letter-spacing="3">N</text></g>
+        <circle cx="200" cy="200" r="132" fill="#2C4649"/>
+        <circle cx="200" cy="200" r="132" fill="none" stroke="#C9965A" stroke-width="2"/>
+        <circle cx="200" cy="200" r="84" fill="none" stroke="rgba(242,234,220,.5)" stroke-width="10"/>
+        <path d="M282 228 L330 246" stroke="rgba(242,234,220,.5)" stroke-width="18" stroke-linecap="round"/>
+        <circle cx="200" cy="200" r="70" fill="#5B3A22"/>
+        <path d="M168 194c18-26 46-26 64 0-18 30-46 30-64 0z" fill="#E9DCC6" opacity=".9"/>
+        <text x="200" y="372" text-anchor="middle" fill="rgba(242,234,220,.75)" font-family="IBM Plex Mono, monospace" font-size="13" letter-spacing="3">M9WV+R3 · ALEDO, TX</text>
+      </svg>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#hero">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" style="width:28px;height:28px"><circle cx="30" cy="32" r="26" stroke="currentColor" stroke-width="3.4"/><circle cx="30" cy="32" r="15.5" stroke="currentColor" stroke-width="3.4"/><path d="M45.5 37.5 L56 41" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/><circle cx="30" cy="32" r="9" fill="#C9965A"/></svg>
+      <div><b>Serve</b><span>Coffee &amp; Goods</span></div>
+    </a>
+    <nav aria-label="Contact">
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Serve+Coffee+%26+Goods%2C+328+Old+Annetta+Rd%2C+Aledo%2C+TX+76008" target="_blank" rel="noopener">328 Old Annetta Rd, Aledo, TX 76008</a>
+      <a href="tel:+18174411400">(817) 441-1400</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var video = document.getElementById('heroVideo');
+  var header = document.getElementById('top');
+
+  // Hero video: stay on the poster for reduced motion, pause when off screen.
+  function syncVideo(visible){
+    if (!video) return;
+    if (rm.matches || !visible) { video.pause(); }
+    else { var p = video.play(); if (p && p.catch) p.catch(function(){}); }
+  }
+  var heroVisible = true;
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){ heroVisible = es[0].isIntersecting; syncVideo(heroVisible); }, {threshold:0}).observe(document.getElementById('hero'));
+  }
+  if (rm.matches && video) { video.removeAttribute('autoplay'); video.pause(); try { video.currentTime = 0; } catch(e){} }
+
+  // Parallax: transform-only, three depths, per-section, rAF-throttled.
+  var layers = [].slice.call(document.querySelectorAll('[data-depth]')).map(function(el){
+    return { el: el, depth: parseFloat(el.getAttribute('data-depth')), host: el.closest('section') || el.parentElement };
+  });
+  var ticking = false;
+  function frame(){
+    ticking = false;
+    var vh = window.innerHeight, y = window.scrollY;
+    header.classList.toggle('solid', y > 40);
+    if (rm.matches) return;
+    for (var i = 0; i < layers.length; i++) {
+      var L = layers[i], r = L.host.getBoundingClientRect();
+      if (r.bottom < -vh * 0.5 || r.top > vh * 1.5) continue;
+      var off = L.host.id === 'hero' ? -r.top : (r.top + r.height / 2 - vh / 2) * -1;
+      L.el.style.transform = 'translate3d(0,' + (off * L.depth).toFixed(1) + 'px,0)';
+    }
+  }
+  function req(){ if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
+  function resetLayers(){ layers.forEach(function(L){ L.el.style.transform = ''; }); }
+  window.addEventListener('scroll', req, {passive:true});
+  window.addEventListener('resize', req);
+  (rm.addEventListener ? rm.addEventListener.bind(rm,'change') : rm.addListener.bind(rm))(function(){ if (rm.matches) resetLayers(); syncVideo(heroVisible); req(); });
+  frame();
+
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+import { chromium } from '/opt/node-tools/node_modules/playwright/index.mjs';
+import path from 'path';
+const b = await chromium.launch();
+let p = await b.newPage({ viewport: { width: 1200, height: 630 } });
+await p.goto('file://' + path.resolve('build/og.html')); await p.waitForLoadState('networkidle'); await p.evaluate(() => document.fonts.ready);
+await p.screenshot({ path: 'site/media/og.jpg', type: 'jpeg', quality: 86 });
+p = await b.newPage({ viewport: { width: 180, height: 180 } });
+await p.goto('file://' + path.resolve('site/favicon.svg'));
+await p.waitForTimeout(300); await p.screenshot({ path: 'site/media/apple-touch-icon.png' });
+await b.close();
